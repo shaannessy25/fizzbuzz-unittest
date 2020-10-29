@@ -32,8 +32,7 @@ function fizzyBuzzy(n) {
   return result
 }
 
-/**
- * Generates a results object describing a sequence of fizz buzz for count.
+ /* Generates a results object describing a sequence of fizz buzz for count.
  * @param {Number} count 
  * @returns {Object} with properties count, fizz, buzz, and fizzbuzz
  */
