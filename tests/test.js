@@ -29,3 +29,11 @@ test("Testing fizzBuzzy", () => {
     expect(fb.fizzyBuzzy(14)).toBe('')
 })
 
+
+test("Testing fizzBuzz", () => {
+    const results = { count: 5, fizz: 1, buzz: 1, fizzBuzz: 0 }
+    expect(fb.fizzBuzz(5)).toEqual(results)
+    
+    const secondResult = { count: 33, fizz: 9, buzz: 4, fizzBuzz: 2 }
+    expect(fb.fizzBuzz(33)).toEqual(secondResult) 
+})
