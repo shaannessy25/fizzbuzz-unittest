@@ -32,8 +32,19 @@ test("Testing fizzBuzzy", () => {
 
 test("Testing fizzBuzz", () => {
     const results = { count: 5, fizz: 1, buzz: 1, fizzBuzz: 0 }
-    expect(fb.fizzBuzz(5)).toEqual(results)
-    
+    const testResults = fb.fizzBuzz(5)
+    expect(testResults).toEqual(results)
+    expect(testResults.count).toBe(5)
+    expect(testResults.fizz).toBe(1)
+    expect(testResults.buzz).toBe(1)
+    expect(testResults.fizzBuzz).toBe(0)
+
     const secondResult = { count: 33, fizz: 9, buzz: 4, fizzBuzz: 2 }
-    expect(fb.fizzBuzz(33)).toEqual(secondResult) 
+    const secondTestResults = fb.fizzBuzz(33)
+    expect(secondTestResults).toEqual(secondResult) 
+    expect(secondTestResults.count).toBe(33)
+    expect(secondTestResults.fizz).toBe(9)
+    expect(secondTestResults.buzz).toBe(4)
+    expect(secondTestResults.fizzBuzz).toBe(2)
+    
 })

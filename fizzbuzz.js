@@ -55,7 +55,7 @@ function fizzBuzz(count) {
   return result
 }
 
-console.log(fizzBuzz(33))
+// console.log(fizzBuzz(33))
 
 module.exports.isFizzy = isFizzy
 module.exports.isBuzzy = isBuzzy
