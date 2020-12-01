@@ -7,7 +7,7 @@ const FIZZBUZZ = 'fizzbuzz'
  * @param {Number} n
  * @returns {Boolean} fizziness 
  * */
-function isFizzy(n) {
+function isFizzy(n: number) : boolean {
   return n % 3 === 0
 }
 
@@ -16,7 +16,7 @@ function isFizzy(n) {
  * @param {Number} n 
  * @returns {Boolean} buzziness
  */
-function isBuzzy(n) {
+function isBuzzy(n: number) : boolean {
   return n % 5 === 0
 }
 
@@ -25,18 +25,18 @@ function isBuzzy(n) {
  * @param {Number} n
  * @returns {String} '', 'FIZZ', 'BUZZ', or 'FIZZBUZZ'
  */
-function fizzyBuzzy(n) {
+function fizzyBuzzy(n: number) : string {
   let result = ''
   if (isFizzy(n)) { result += FIZZ }
   if (isBuzzy(n)) { result += BUZZ }
   return result
 }
 
- /* Generates a results object describing a sequence of fizz buzz for count.
+ /** Generates a results object describing a sequence of fizz buzz for count.
  * @param {Number} count 
  * @returns {Object} with properties count, fizz, buzz, and fizzbuzz
- */
-function fizzBuzz(count) {
+ **/
+function fizzBuzz(count: number) : object {
   let result = { count, fizz: 0, buzz: 0, fizzBuzz: 0 }
   for (let i = 1; i <= count; i += 1) {
     const str = fizzyBuzzy(i)
